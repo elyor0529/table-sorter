@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CeleraOne Application-Task</title>
+    <style>
+        /*------------------------TABLE-------------------------*/
+        table.sortable {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+
+        .sortable th {
+            background-color: #E4EDFC;
+            cursor: pointer;
+            padding: 6px 15px 6px 6px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .sortable th.descend:after {
+            content: "\25B2";
+        }
+
+        .sortable th.ascend:after {
+            content: "\25BC";
+        }
+
+        .sortable td img {
+            padding: 0 4px 0 0;
+            margin: 0 0 -1px 0;
+        }
+
+        .sortable td input,
+        .sortable td.in_cell {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sortable td {
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            color: #222222;
+            font-size: .8em;
+            margin: 0;
+            padding: 1px 6px 2px 7px;
+            white-space: nowrap;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /*----------------------TABLE COLUMNS--------------------*/
+    </style>
+    <script src="solution.js"></script>
+</head>
+<body>
+<h1>
+    CeleraOne Application-Task
+</h1>
+<hr/>
+
+<h2>Data example A</h2>
+<table id="tableA" class="sortable" width="40%">
+    <thead>
+    <tr>
+        <th data-sorter="string">Company Name</th>
+        <th data-sorter="string">Product</th>
+        <th data-sorter="numeric">Price</th>
+        <th data-sorter="date">FDA date approved</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<br/>
+<br/>
+
+<h2>
+    Data example B
+</h2>
+<table id="tableB" class="sortable" width="60%">
+    <thead>
+    <tr>
+        <th data-sorter="string">First Name</th>
+        <th data-sorter="string">Last Name</th>
+        <th data-sorter="string">Country</th>
+        <th data-sorter="string">Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<br/>
+<br/>
+</body>
+</html>
